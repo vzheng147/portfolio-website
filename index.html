@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Professional portfolio of Vincent Zheng, computer science student and software engineer."
+    />
+
+    <title>Vincent Zheng | Software Engineer</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="section-nav" aria-label="Section navigation">
+      <a href="#top">Home</a>
+      <a href="#journey">Journey</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Vincent Zheng, home">
+          <span class="brand-mark" aria-hidden="true">VZ</span>
+          <span>Vincent Zheng</span>
+        </a>
+        <a class="header-contact" href="#contact">Get in touch</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">SOFTWARE ENGINEERING · CLOUD COMPUTING</p>
+
+            <h1>
+              Hi, I'm
+              <span>Vincent Zheng</span>.
+            </h1>
+
+            <p class="hero-lede">
+              I am a Computer Science student at Stony Brook University,
+              interested in software engineering and cloud computing
+              opportunities. In high school, I was a competitive chess player
+              and came across the powerful Stockfish chess engine. I was in awe
+              to how even the best players in the world cannot outcompete a
+              model running on any ordinary laptop. Thus, I was inspired to
+              learn programming and became intrigued by the world of computer
+              science.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#journey"> Start My Journey </a>
+
+              <a class="button secondary" href="Senior_resume.pdf" download>
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo-wrap">
+            <img
+              class="hero-photo"
+              src="Chess-sq.jpg"
+              alt="Black and ivory chess pieces, including a king, queen, and knight"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         MY JOURNEY
+         GAME / LEVEL SYSTEM
+         MAIN PATHOS SECTION
+         ===================================================== -->
+
+      <section id="journey" class="journey-section">
+        <div class="container">
+          <!-- JOURNEY HEADER -->
+
+          <div class="journey-header">
+            <div>
+              <p class="game-label">STORY MODE</p>
+
+              <h2>My Journey</h2>
+
+              <p class="journey-intro">
+                Click through the levels to read my full story progressively.
+                Each level unlocks the next.
+              </p>
+            </div>
+
+            <!-- PROGRESS -->
+
+            <div class="journey-stats">
+              <span> PROGRESS </span>
+
+              <strong id="journeyProgressText"> 1 / 5 </strong>
+            </div>
+          </div>
+
+          <!-- XP BAR -->
+
+          <div class="xp-bar" aria-label="Journey progress">
+            <div id="journeyProgressFill" class="xp-fill"></div>
+          </div>
+
+          <!-- LEVEL PATH -->
+
+          <div class="journey-scroll">
+            <div class="journey-path">
+              <!-- =====================
+                 LEVEL 1
+                 ===================== -->
+
+              <button class="journey-node current" data-level="1" type="button">
+                <span class="level-number"> LEVEL 01 </span>
+
+                <div class="level-icon">♟</div>
+
+                <h3>Rookie</h3>
+
+                <p>Freshman Year</p>
+
+                <span class="level-action"> ENTER LEVEL </span>
+              </button>
+
+              <div class="path-arrow" aria-hidden="true">→</div>
+
+              <!-- =====================
+                 LEVEL 2
+                 ===================== -->
+
+              <button
+                class="journey-node locked"
+                data-level="2"
+                type="button"
+                disabled
+              >
+                <span class="level-number"> LEVEL 02 </span>
+
+                <div class="level-icon">⚙</div>
+
+                <h3>Novice</h3>
+
+                <p>Freshmen Summer</p>
+
+                <span class="level-action"> 🔒 LOCKED </span>
+              </button>
+
+              <div class="path-arrow" aria-hidden="true">→</div>
+
+              <!-- =====================
+                 LEVEL 3
+                 ===================== -->
+
+              <button
+                class="journey-node locked"
+                data-level="3"
+                type="button"
+                disabled
+              >
+                <span class="level-number"> LEVEL 03 </span>
+
+                <div class="level-icon">⌨</div>
+
+                <h3>Explorer</h3>
+
+                <p>Sophomore Summer</p>
+
+                <span class="level-action"> 🔒 LOCKED </span>
+              </button>
+
+              <div class="path-arrow" aria-hidden="true">→</div>
+
+              <!-- =====================
+                 LEVEL 4
+                 ===================== -->
+
+              <button
+                class="journey-node locked"
+                data-level="4"
+                type="button"
+                disabled
+              >
+                <span class="level-number"> LEVEL 04 </span>
+
+                <div class="level-icon">⌬</div>
+
+                <h3>Challenger</h3>
+
+                <p>Junior Year</p>
+
+                <span class="level-action"> 🔒 LOCKED </span>
+              </button>
+
+              <div class="path-arrow" aria-hidden="true">→</div>
+
+              <!-- =====================
+                 LEVEL 5
+                 ===================== -->
+
+              <button
+                class="journey-node locked"
+                data-level="5"
+                type="button"
+                disabled
+              >
+                <span class="level-number"> LEVEL 05 </span>
+
+                <div class="level-icon">★</div>
+
+                <h3>Contender</h3>
+
+                <p>Junior Summer</p>
+
+                <span class="level-action"> 🔒 LOCKED </span>
+              </button>
+
+              <div class="path-arrow" aria-hidden="true">→</div>
+
+              <!-- =====================
+                 LEVEL 6
+                 ===================== -->
+
+              <button
+                class="journey-node locked"
+                data-level="6"
+                type="button"
+                disabled
+              >
+                <span class="level-number"> LEVEL 06 </span>
+
+                <div class="level-icon">♚</div>
+
+                <h3>Veteran</h3>
+
+                <p>Senior Year</p>
+
+                <span class="level-action"> 🔒 LOCKED </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- QUEST FOOTER -->
+
+          <div class="journey-footer">
+            <span>
+              QUEST: Follow Vincent's path through computer science.
+            </span>
+
+            <button id="resetJourney" type="button">RESET JOURNEY</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         EXPERIENCE
+         LOGOS: QUANTIFIED ACCOMPLISHMENTS
+         ===================================================== -->
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-heading-row experience-heading">
+            <div>
+              <p class="section-kicker">EXPERIENCE</p>
+              <h2>Where I’ve made an impact.</h2>
+            </div>
+            <div class="timeline-controls experience-controls">
+              <button
+                id="experiencePrev"
+                class="round-button"
+                type="button"
+                aria-label="Previous experience"
+              >
+                ←
+              </button>
+              <button
+                id="experienceNext"
+                class="round-button"
+                type="button"
+                aria-label="Next experience"
+              >
+                →
+              </button>
+            </div>
+          </div>
+
+          <div id="experienceTrack" class="experience-grid">
+            <!-- =====================================
+               FIRST CITIZENS BANK
+               ===================================== -->
+
+            <article id="first-citizens" class="experience-card">
+              <div class="experience-card-header">
+                <p class="timeline-date">MAY 2026 – JUL 2026</p>
+
+                <h3>First Citizens Bank</h3>
+
+                <p class="role">Software Engineer Intern</p>
+              </div>
+
+              <div class="experience-card-content">
+                <ul class="experience-highlights">
+                  <li>
+                    Engineered a Node.js microservice to automate AEM site
+                    onboarding, generating brand configurations and demo content
+                    packages on demand and cutting setup time from days to
+                    minutes.
+                  </li>
+                  <li>
+                    Built multi-threaded structured test-execution logging into
+                    Splunk for a Java test automation platform serving 7 QA
+                    teams, centralizing failure metrics and eliminating manual
+                    log inspection.
+                  </li>
+                  <li>
+                    Refactored 10+ AEM components with Java Sling Models,
+                    decoupling backend logic from HTL templates.
+                  </li>
+                  <li>
+                    Designed JUnit test suites with 95% code coverage across
+                    component models, validating backend logic.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tag-row">
+                <span>Java</span>
+                <span>Node.js</span>
+                <span>AEM</span>
+                <span>JUnit</span>
+                <span>Splunk</span>
+              </div>
+            </article>
+
+            <!-- =====================================
+               STONY BROOK WEB DEVELOPMENT
+               ===================================== -->
+
+            <article id="sbu-web-services" class="experience-card">
+              <div class="experience-card-header">
+                <p class="timeline-date">SEP 2025 – MAY 2026</p>
+
+                <h3>Stony Brook University Web Services</h3>
+
+                <p class="role">Software Engineer Intern</p>
+              </div>
+
+              <div class="experience-card-content">
+                <ul class="experience-highlights">
+                  <li>
+                    Built 15+ responsive reusable components with HTML, CSS, and
+                    JavaScript in Modern Campus CMS and set up 20+ department
+                    sites by configuring templates, files, navigation, and
+                    settings for content owners.
+                  </li>
+                  <li>
+                    Streamlined CMS operations for 8 engineers through custom
+                    automation gadgets, saving an estimated 20+ engineering
+                    hours each month.
+                  </li>
+                  <li>
+                    Authored 5+ technical guides and video tutorials for future
+                    developers, reducing onboarding ramp-up time.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Modern Campus CMS</span>
+              </div>
+            </article>
+
+            <!-- =====================================
+               ETHOS LAB
+               ===================================== -->
+
+            <article id="ethos-lab" class="experience-card">
+              <div class="experience-card-header">
+                <p class="timeline-date">JAN 2026 – PRESENT</p>
+
+                <h3>Ethos Security &amp; Privacy Labs</h3>
+
+                <p class="role">Security Research Assistant</p>
+              </div>
+
+              <div class="experience-card-content">
+                <ul class="experience-highlights">
+                  <li>
+                    Engineered an SSH honeypot backend combining deterministic
+                    shell emulation with LLM-based fallback generation,
+                    increasing attacker engagement from 2.96 to 5.41 commands
+                    per session.
+                  </li>
+                  <li>
+                    Developed a SQLite persistence layer that caches LLM-
+                    generated virtual filesystem contents and maps sessions by
+                    IP, enabling stateful interactions while reducing API calls
+                    by 30%.
+                  </li>
+                  <li>
+                    Implemented GitHub Actions CI/CD pipelines to automate
+                    testing and container releases.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tag-row">
+                <span>Security</span>
+                <span>Python</span>
+                <span>LLMs</span>
+                <span>SQLite</span>
+                <span>GitHub Actions</span>
+              </div>
+            </article>
+
+            <!-- =====================================
+               MISSOURI REU
+               ===================================== -->
+
+            <article id="missouri-reu" class="experience-card">
+              <div class="experience-card-header">
+                <p class="timeline-date">MAY 2025 – JUL 2025</p>
+
+                <h3>University of Missouri</h3>
+
+                <p class="role">NSF Research Experience for Undergraduates</p>
+              </div>
+
+              <div class="experience-card-content">
+                <ul class="experience-highlights">
+                  <li>
+                    Engineered a full-stack agricultural analytics platform with
+                    React, FastAPI, and PostgreSQL for real-time orthomosaic
+                    analysis, field mosaicing, and automated plant counting.
+                  </li>
+                  <li>
+                    Optimized analysis of 3.5 GB orthomosaics to run in under a
+                    minute, improving performance by 40% through Python-based
+                    heatmap generation and algorithmic refinements.
+                  </li>
+                  <li>
+                    Integrated Dockerized mosaicing and YOLOv8 detection into a
+                    unified FastAPI backend, processing 500+ GB of imagery
+                    across 15+ fields with 95%+ accuracy.
+                  </li>
+                  <li>
+                    Co-authored a paper on drone coordination for agricultural
+                    mosaicing submitted to IEEE ICNC 2026.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tag-row">
+                <span>Python</span>
+                <span>React</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>YOLOv8</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         PUBLICATIONS
+         ETHOS + LOGOS
+         ===================================================== -->
+
+      <section id="publications" class="section">
+        <div class="container">
+          <p class="section-kicker">PUBLICATIONS</p>
+
+          <h2>Research I’ve contributed to.</h2>
+
+          <div class="publication-grid">
+            <!-- =====================================
+               HYBRID COWRIE
+               ===================================== -->
+
+            <article id="security-paper" class="publication-card">
+              <p class="publication-type">SECURITY · HONEYPOTS · LLMs</p>
+
+              <h3>
+                Hybrid Cowrie: A Stateful SSH Honeypot with Shell Execution and
+                LLM Fallback
+              </h3>
+
+              <p class="publication-meta">
+                V. Zheng, R. Hung, A. Pitumpe, A. Rahmati.
+              </p>
+
+              <p class="publication-status">Manuscript in preparation</p>
+            </article>
+
+            <article id="drone-paper" class="publication-card">
+              <p class="publication-type">
+                DRONE COORDINATION · AGRICULTURAL IMAGE ANALYSIS
+              </p>
+
+              <h3>
+                Multi-Agent Proximal Policy Optimization for Network-Aware
+                Drone-based Crop Image Analysis
+              </h3>
+
+              <p class="publication-meta">
+                A. Hellman, B. Wagle, S. Peppers, V. Zheng, et al.
+              </p>
+
+              <div class="publication-status-actions">
+                <p class="publication-status published">
+                  Published in IEEE IJCNN 2026
+                </p>
+                <a
+                  class="button primary"
+                  href="https://engineering.missouri.edu/2026/helping-ag-drones-make-better-decisions-faster/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  READ ABOUT THE RESEARCH →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         PROJECTS
+         ETHOS + LOGOS + INTERACTIVITY
+         ===================================================== -->
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <p class="section-kicker">PROJECTS</p>
+
+          <h2>Things I’ve built.</h2>
+
+          <div class="project-grid">
+            <article id="hybrid-cowrie" class="project-card">
+              <div class="project-number">01</div>
+
+              <h3>Hybrid Cowrie</h3>
+
+              <p>Incorporating LLM into honeypots.</p>
+
+              <p class="project-status">Manuscript in preparation</p>
+            </article>
+
+            <article id="raven" class="project-card">
+              <div class="project-number">02</div>
+
+              <h3>Raven</h3>
+
+              <p>2D Platformer. Live demo available.</p>
+
+              <div class="project-actions">
+                <a
+                  class="button secondary"
+                  href="https://github.com/vzheng147/Raven"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Link
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-number">03</div>
+
+              <h3>Social Media Platform</h3>
+
+              <p>Reddit Clone. Live demo available.</p>
+
+              <div class="project-actions">
+                <a
+                  class="button secondary"
+                  href="https://github.com/vzheng147/Phreddit"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Link
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <p class="section-kicker">SKILLS</p>
+
+          <h2>The tools behind the work.</h2>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div class="skill-list">
+                <span>Java</span>
+                <span>Python</span>
+                <span>C</span>
+                <span>SQL</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bash</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Frameworks</h3>
+              <div class="skill-list">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Spring Boot</span>
+                <span>FastAPI</span>
+                <span>AEM</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <div class="skill-list">
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Git</span>
+                <span>JUnit</span>
+                <span>Pytest</span>
+                <span>Splunk</span>
+                <span>LLMs</span>
+                <span>YOLOv8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+      <section id="contact" class="section section-alt contact-section">
+        <div class="container narrow">
+          <p class="section-kicker">CONTACT</p>
+
+          <h2>Let's connect.</h2>
+
+          <p class="section-copy">
+            Feel free to reach out through email, GitHub, or LinkedIn.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:vzheng147@gmail.com"> Email </a>
+
+            <a
+              href="https://github.com/vzheng147"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/vincent-zheng-191663195/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span> Vincent Zheng </span>
+
+        <span> Built with HTML, CSS, JavaScript & GitHub Pages. </span>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+       MY JOURNEY STORY MODAL
+
+       This stays outside <main>.
+       JS fills the story dynamically.
+       ===================================================== -->
+
+    <dialog id="journeyModal" class="journey-modal">
+      <div class="modal-topbar">
+        <div>
+          <span id="modalLevel" class="game-label"> LEVEL 01 </span>
+
+          <h2 id="modalTitle">Rookie</h2>
+        </div>
+
+        <button
+          id="closeJourneyModal"
+          class="modal-close"
+          type="button"
+          aria-label="Close story"
+        >
+          ×
+        </button>
+      </div>
+
+      <p id="modalChapter" class="modal-chapter">Freshman Year</p>
+
+      <div id="journeyStory" class="journey-story" aria-live="polite"></div>
+
+      <div id="journeyLinks" class="journey-links"></div>
+
+      <div class="modal-actions">
+        <button id="skipTyping" class="game-button secondary" type="button">
+          SKIP ANIMATION
+        </button>
+
+        <button id="exitJourney" class="game-button secondary" type="button">
+          EXIT
+        </button>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
